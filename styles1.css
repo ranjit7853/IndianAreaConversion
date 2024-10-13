@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.container {
+    max-width: 600px; /* Maximum width of the container */
+    margin: 50px auto; /* Centering the container with automatic margins */
+    background-color: #fff; /* White background for the container */
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+}
+
+.title {
+    color: #d9534f; /* Bootstrap danger color for the title */
+    font-weight: bold;
+    text-align: center; /* Center-align the title */
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+.conversion-row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    margin-top: 20px; /* Increased margin for separation */
+}
+
+input, select {
+    padding: 10px; /* Increased padding for inputs */
+    margin-right: 10px; /* Space between elements */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Slightly rounded corners for inputs */
+    width: calc(50% - 10px); /* Set width while accounting for margin */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+input:focus, select:focus {
+    border-color: #5bc0de; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #5bc0de; /* Light blue background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside the button */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Font size for the button */
+    width: 100%; /* Full width button */
+    margin-top: 20px; /* Margin above the button */
+}
+
+button:hover {
+    background-color: #31b0d5; /* Darker blue on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.copyright {
+    margin-top: 20px; /* Add some space above */
+    font-size: 14px; /* Adjust the font size */
+    color: #333; /* Change the text color */
+    text-align: center; /* Center the text */
+    border-top: 1px solid #4CAF50; /* Add a top border */
+    padding-top: 10px; /* Add some space above the text */
+    font-weight: bold; /* Make the text bold */
+    background-color: #f9f9f9; /* Light background color */
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Area Units Conversion</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles1.css"> <!-- Link to styles.css -->
+    <script>
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Indian Area Units Conversion</h1>
+        <div class="conversion-row">
+            <input type="number" id="inputValue" placeholder="Enter value">
+            <select id="fromUnit">
+                <option value="acre">Acre</option>
+                <option value="sqft">Sq.Ft</option>
+                <option value="sqmt">Sq.Mt</option>
+                <option value="hectare">Hectare</option>
+                <option value="sqyd">Sq.Yds</option>
+                <option value="kanal">Kanal</option>
+                <option value="marla">Marla</option>
+                <option value="bighahr">Bigha-Hr</option>
+                <option value="bighapb">Bigha-Pb</option>
+                <option value="bighaup">Bigha-UP</option>
+                <option value="bighabh">Bigha-BH</option>
+                <option value="bighamp">Bigha-MP</option>
+                <option value="bighagj">Bigha-GJ</option>
+                <option value="bighahp">Bigha-HP</option>
+                <option value="bighauk">Bigha-UK</option>
+                <option value="bighaas">Bigha-AS</option>
+                <option value="bighawb">Bigha-WB</option>
+                <option value="bigharjp">Bigha-RJ-P</option>
+                <option value="bigharjk">Bigha-RJ-K</option>
+            </select>
+        </div>
+        <div class="conversion-row">
+            <input type="text" id="outputValue" placeholder="Converted result" readonly>
+            <select id="toUnit">
+                <option value="acre">Acre</option>
+                <option value="sqft">Sq.Ft</option>
+                <option value="sqmt">Sq.Mt</option>
+                <option value="hectare">Hectare</option>
+                <option value="sqyd">Sq.Yds</option>
+                <option value="kanal">Kanal</option>
+                <option value="marla">Marla</option>
+                <option value="bighahr">Bigha-Hr</option>
+                <option value="bighapb">Bigha-Pb</option>
+                <option value="bighaup">Bigha-UP</option>
+                <option value="bighabh">Bigha-BH</option>
+                <option value="bighamp">Bigha-MP</option>
+                <option value="bighagj">Bigha-GJ</option>
+                <option value="bighahp">Bigha-HP</option>
+                <option value="bighauk">Bigha-UK</option>
+                <option value="bighaas">Bigha-AS</option>
+                <option value="bighawb">Bigha-WB</option>
+                <option value="bigharjp">Bigha-RJ-P</option>
+                <option value="bigharjk">Bigha-RJ-K</option>
+            </select>
+        </div>
+<!-- Copyright Notice -->
+    <div class="copyright">
+        Copyright &copy; Ranjit Singh
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

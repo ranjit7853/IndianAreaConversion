@@ -1,0 +1,40 @@
+{
+    "name": "Indian Area Units Conversion",
+    "short_name": "AreaUnits",
+    "start_url": "index.html",
+    "id": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+        {
+            "src": "Maskable512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "Icon192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "Screenshot-App.png",
+            "sizes": "735x712",
+            "type": "image/png",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "Screenshot-App.png",
+            "sizes": "735x712",
+            "type": "image/png",
+            "form_factor": "wide"
+        }
+    ],
+    "window_controls_overlay": {
+        "color": "#ffffff"
+    },
+    "description": "This easy to use app converts the land area from one Indian area unit to another."
+}
